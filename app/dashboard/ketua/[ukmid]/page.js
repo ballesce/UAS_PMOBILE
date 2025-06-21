@@ -90,9 +90,7 @@ export default function DashboardMahasiswa() {
           </button>
         </div>
         <nav className="p-4 space-y-1">
-          <Link href="/dashboard/ketua" className="flex items-center gap-3 p-3 rounded-lg hover:bg-blue-600 transition-colors">
-            <FiHome className="text-lg" /> <span>Dashboard</span>
-          </Link>
+
           <Link href="/dashboard/ketua/agenda" className="flex items-center gap-3 p-3 rounded-lg hover:bg-blue-600 transition-colors">
             <FiCalendar className="text-lg" /> <span>Kegiatan</span>
           </Link>
