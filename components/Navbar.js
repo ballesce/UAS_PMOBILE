@@ -116,14 +116,18 @@ export default function Navbar() {
               className={`block px-3 py-2 rounded-md text-base font-medium ${pathname === '/events' ? 'text-blue-600 bg-blue-50' : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'}`}
               onClick={() => setIsOpen(false)}
             >
-              Kegiatan
+              <Link 
+              href="/events" 
+              className={`px-3 py-2 rounded-md text-sm font-medium ${pathname === '/events' ? 'text-blue-600 bg-blue-50' : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'}`}
+            >
+              Ranking
             </Link>
-
-            <div className="pt-4 border-t border-gray-200 mt-4 space-y-3">
-              <Link
-                href="/login"
-                className="block w-full px-4 py-2 text-center text-sm font-medium text-blue-600 border border-blue-600 rounded-lg hover:bg-blue-50 transition duration-300"
-                onClick={() => setIsOpen(false)}
+            <Link 
+              href="/profile" 
+              className={`px-3 py-2 rounded-md text-sm font-medium ${pathname === '/profile' ? 'text-blue-600 bg-blue-50' : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'}`}
+            >
+              Profil Saya
+            </Link>
               >
                 Masuk
               </Link>
